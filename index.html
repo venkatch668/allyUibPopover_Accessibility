@@ -1,0 +1,32 @@
+<!doctype html>
+<html ng-app="demo">
+  <head>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-animate.js"></script>
+    <script src="https://code.angularjs.org/1.4.9/angular-sanitize.min.js"></script>
+    <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.1.1.js"></script>
+    <script src="js/script.js"></script>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		.demo{
+			width:500px;
+			margin:0 auto;
+		}
+		.box{
+			height:150px;
+			width:150px;
+		}
+	</style>
+  </head>
+  <body>
+<div ng-init="content='venkat is working on it';err='<ul><li>some thing went wrong</li><li>some thing went wrong</li><li>some thing went wrong</li><li>some thing went wrong</li><li>some thing went wrong</li></ul>'">
+
+	<ally-uib-popover ally-back="ReportsToIcon" ally-aria="Press enter open window" ally-template="content" ally-placement="bottom-left" ally-trigger="outsideClick" ally-icon="glyphicon-info-sign"></ally-uib-popover>
+	
+	<ally-uib-popover ally-back="ReportsToIcon2" ally-aria="Press enter open document"  ally-template="err" ally-placement="top" ally-trigger="outsideClick" ally-icon="glyphicon glyphicon-th"></ally-uib-popover>
+	
+</div>
+ </body>
+</html>

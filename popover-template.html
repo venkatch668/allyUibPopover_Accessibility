@@ -1,0 +1,26 @@
+<!-- you can remove this code -->
+<p class="h3"> Controlls </p>
+	<div class="col-xs-4">
+	<table class="table">
+		<tr><th>focus back control<th><td> {{allyBack}} </td></tr>
+		<tr><th>Aria Label for jaws<th><td>{{allyAria}} </td></tr>
+		<tr><th>Controll ICON<th><td>{{allyIcon}} </td></tr>
+		<tr><th>Template inside popup (text, or html)<th><td>{{allyTemplate}} </td></tr>
+		<tr><th>placment of popup (left,top)<th><td>{{allyPlacement}} </td></tr>
+		<tr><th>Trigger the Popup(click, outside)<th><td>{{allyTrigger}} </td></tr>		
+	</table>	
+	</div>
+<div class="clearfix"></div>
+<!-- you can remove this code -->
+<div class="demo">
+	<span tabindex="0" id="{{allyBack}}" class="pull-left" uib-popover-template="'popup.html'" popover-placement="{{allyPlacement}}" popover-trigger="{{allyTrigger}}" ng-click="setFocus('PopupTemplate',100)" ng-keydown="$event.which===13 && openPopover(allyBack,'PopupTemplate',200)" aria-label="{{allyAria}}">
+		<span class="glyphicon {{allyIcon}}"></span>
+	</span>
+<!-- Popover list start -->
+<script type="text/ng-template" id="popup.html">
+	<div class="popoverContent" tabindex="0" id="PopupTemplate" ng-keydown="esctoclose(allyBack,$event)">
+		<div ng-bind-html="bindhtmlcode()"></div>
+	</div>
+</script>
+<div class="clearfix"></div>
+<!-- Popover list end -->
