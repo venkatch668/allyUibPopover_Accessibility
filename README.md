@@ -1,6 +1,6 @@
 
-# angular1.5_Typescript_Components_Bootststrap
-Angular1.5 Component with Typescript using Bootstrap 
+# allyUibPopover_Accessibility
+Angular1.5 Accessibility complient Popover directive based on UIBootstrap
 
 ## Steps:
 1. download from https://github.com/venkatch668/allyUibPopover_Accessibility.git
